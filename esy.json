@@ -1,0 +1,28 @@
+{
+  "source": "./oclaunch.opam",
+  "dependencies": {
+    "@opam/alcotest": "1.4.0",
+    "@opam/atdgen": "2.2.1",
+    "@opam/base-threads": "base",
+    "@opam/core": "v0.14.1",
+    "@opam/core_extended": "v0.14.0",
+    "@opam/num": "1.4",
+    "@opam/ounit": "2.2.4",
+    "@opam/ounit2": "2.2.4",
+    "@opam/re2": "v0.14.0",
+    "@opam/reason": "3.7.0",
+    "@opam/textutils": "v0.14.0",
+    "melange": "melange-re/melange",
+    "ocaml": "4.12.x"
+  },
+  "devDependencies": {
+    "ocaml": "4.12.x",
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam"
+  },
+  "scripts": {
+    "start": "dune exec --root . ./src/oclaunch.exe",
+    "install": "esy ocaml setup.ml -install",
+    "configure": "esy ocaml setup.ml -configure",
+    "build": "esy ocaml setup.ml -build"
+  }
+}

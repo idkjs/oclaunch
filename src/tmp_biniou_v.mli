@@ -11,7 +11,7 @@ type tmp_file = Tmp_biniou_t.tmp_file = {
 }
 
 val validate_rc_name :
-  Ag_util.Validation.path -> rc_name -> Ag_util.Validation.error option
+  Atdgen_runtime.Util.Validation.path -> rc_name -> Atdgen_runtime.Util.Validation.error option
   (** Validate a value of type {!rc_name}. *)
 
 val create_rc_entry :
@@ -20,7 +20,7 @@ val create_rc_entry :
   (** Create a record of type {!rc_entry}. *)
 
 val validate_rc_entry :
-  Ag_util.Validation.path -> rc_entry -> Ag_util.Validation.error option
+  Atdgen_runtime.Util.Validation.path -> rc_entry -> Atdgen_runtime.Util.Validation.error option
   (** Validate a value of type {!rc_entry}. *)
 
 val create_tmp_file :
@@ -30,6 +30,6 @@ val create_tmp_file :
   (** Create a record of type {!tmp_file}. *)
 
 val validate_tmp_file :
-  Ag_util.Validation.path -> tmp_file -> Ag_util.Validation.error option
+  Atdgen_runtime.Util.Validation.path -> tmp_file -> Atdgen_runtime.Util.Validation.error option
   (** Validate a value of type {!tmp_file}. *)
 

@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 val make_uniq : 'a list -> 'a list
 val prettify_cmd : string list -> string list

@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* Variable to store version number *)
 (* TODO Get value from file *)

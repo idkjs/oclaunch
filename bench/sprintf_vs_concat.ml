@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* File to test who is the faster fo a special case *)
 open Core_bench.Std

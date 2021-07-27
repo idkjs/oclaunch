@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* A module containing tests for src/edit_command.ml *)
 

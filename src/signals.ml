@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* Working with signals and behave according to it *)
 (* XXX May use async for this. Here is what the Core's doc say

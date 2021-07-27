@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* File to test what's the most efficient way to remove doubled entries, keeping
  * order *)

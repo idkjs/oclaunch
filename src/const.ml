@@ -36,7 +36,7 @@
 
 (* File to stock configuration variables *)
 
-open Core.Std;;
+open Core;;
 
 (* We need to be as lazy as possible, since sometimes, some varible are not
  * needed and thus, it's useless the raise an exception. *)

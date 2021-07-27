@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* Type of the values *)
 type t = Tmp_biniou_t.tmp_file;;

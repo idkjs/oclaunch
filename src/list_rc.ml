@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* This modules contains function to list the content of the rc file *)
 
@@ -90,7 +90,7 @@ let run ?rc ?elength () =
   |> List.map ~f:(function
            ( cmd, number ) ->
            [ (* Number of a command in rc file, command, number of launch *)
-             (List.Assoc.find_exn rc_numbered cmd |> Int.to_string);
+             (List.Assoc.find_exn rc_numbered cmd |> Int.equal (Int.to_string _));
              (* Limit length, to get better display with long command. A default
               * length is involved when no length is specified *)
              elength |> (function None -> truncate cmd

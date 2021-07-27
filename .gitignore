@@ -16,3 +16,5 @@ dist
 *.vim
 .settings/
 *.back
+_esy
+node_modules

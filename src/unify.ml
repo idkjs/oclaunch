@@ -40,7 +40,7 @@
  * something like this in Core, should search further. *)
 let trim = String.trim;;
 
-open Core.Std;;
+open Core;;
 
 (* Function to remove doubled entries, keeping order in a given list. Since the
  * list is a very short one, (a few tens entries), it's cheaper to use a list

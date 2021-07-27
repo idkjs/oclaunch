@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* Function allowing to set the title of the current terminal windows
  * XXX Maybe better in some lib *)

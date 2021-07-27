@@ -34,7 +34,7 @@
 (*  termes.                                                                   *)
 (******************************************************************************)
 
-open Core.Std;;
+open Core;;
 
 (* Modules to manage output messages, with color *)
 
@@ -166,7 +166,7 @@ let rec confirm info =
          (* XXX Be sure to show the message *)
          Out_channel.(flush stdout);
          let str_answer = In_channel.(input_line ~fix_win_eol:true stdin) in
-         str_answer |> Option.map ~f:String.lowercase
+         str_answer |> Option.map ~f:String.lowercase_ascii
          |> (function
               | Some "y" | Some "ye" | Some "yes" -> Yes
               | Some "n" | Some "no" -> No

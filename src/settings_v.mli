@@ -13,6 +13,6 @@ val create_rc_file :
   (** Create a record of type {!rc_file}. *)
 
 val validate_rc_file :
-  Ag_util.Validation.path -> rc_file -> Ag_util.Validation.error option
+  Atdgen_runtime.Util.Validation.path -> rc_file -> Atdgen_runtime.Util.Validation.error option
   (** Validate a value of type {!rc_file}. *)
 
